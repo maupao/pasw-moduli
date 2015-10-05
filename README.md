@@ -5,4 +5,4 @@ La scelta di github è data dalla possibilità di avere un luogo che sia raggiun
 Adesso bisogna solo capire come lavorare in questo ambiente.
 
 ##Alcune indicazioni
-Un breve verbale della videoconferenza lo si può trovare a questo <a href="http://piratepad.net/pasw-moduli">indirizzo</a>
+Un breve verbale della videoconferenza lo si può trovare a questo <a href="http://piratepad.net/pasw-form">indirizzo</a>
