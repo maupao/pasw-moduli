@@ -1,0 +1,76 @@
+<p>A. S. [select a_s_ include_blank "2016-2017" "2017-2018"] Scuola [select scuola include_blank "dell'infanzia" "primaria" "secondaria"] Plesso [select plesso include_blank "Garbagnate" "Nostra Famiglia" "2 padiglione" "3 padiglione" "5 padiglione" "Calvino" "Segantini" "Wojtyla"]</p>
+
+<h3>1. Denominazione progetto</h3>
+<p>[text* nome-progetto]</p>
+
+<h3>2. Progetto:</h3>
+<p>[select* progetto include_blank "nuovo" "prosecuzione di un progetto già esistente" "ampliamento di un progetto già esistente" "implementazione di un progetto già esistente"]</p>
+
+<h3>3. Insegnante referente</h3>
+<p>[text* referente default:user_display_name]</p>
+
+<h3>4. Altre persone o enti coinvolti (crocettare e specificare)</h3><br />
+<p>[checkbox enti "Esperti esterni in qualità di docenti" "Consulenti" "Enti locali" "Coni" "Enti di promozione" "Sponsor" "Progetto in rete" "Altri enti esterni" "Famiglie" "Docenti dell'Istituto Comprensivo" "Altro"]</p>
+<p>[text ente]</p>
+
+<h3>5. Periodo di attuazione</h3>
+<p>[textarea* periodo x2 placeholder "Descrivere l'arco temporale nel quale il progetto si attua"]</p>
+
+<h3>6. Ore dei docenti</h3>
+<ul>
+<li><p>[text chi_docenti_1 placeholder "Inserire il nome del docente"]<br />
+n. ore curr. [text ore_doc1_curr 5/3] n. ore extracurr. ins. [text ore_doc1_extrac 5/3] n. ore progettazione [text ore_doc1_prog 5/3]</p></li>
+<li><p>[text chi_docenti_2 placeholder "Inserire il nome del docente"]<br />
+n. ore curr. [text ore_doc2_curr 5/3] n. ore extracurr. ins. [text ore_doc2_extrac 5/3] n. ore progettazione [text ore_doc2_prog 5/3]</p></li>
+<li><p>[text chi_docenti_3 placeholder "Inserire il nome del docente"]<br />
+n. ore curr. [text ore_doc3_curr 5/3] n. ore extracurr. ins. [text ore_doc3_extrac 5/3] n. ore progettazione [text ore_doc3_prog 5/3]</p></li>
+<li><p>[text chi_docenti_4 placeholder "Inserire il nome del docente"]<br />
+n. ore curr. [text ore_doc4_curr 5/3] n. ore extracurr. ins. [text ore_doc4_extrac 5/3] n. ore progettazione [text ore_doc4_prog 5/3]</p></li>
+<li><p>[text chi_docenti_5 placeholder "Inserire il nome del docente"]<br />
+n. ore curr. [text ore_doc5_curr 5/3] n. ore extracurr. ins. [text ore_doc5_extrac 5/3] n. ore progettazione [text ore_doc5_prog 5/3]</p></li>
+</ul>
+
+<h3>7. Intervento di esperti</h3>
+<h4>Esperti esterni</h4>
+<p>N. esperti [text n_esperti 5/3] N. ore [text ore_esperti_ins 5/3] Euro [text euro_esperti_cons 6/8]</p> 
+
+<h3>8. Eventuali uscite previste</h3>
+<p>[radio uscite "si" "no"]</p>
+
+<h3>9. Destinatari</h3><br />
+<p>Classi [text* classi placeholder "indicare le classi"]</p>
+<p>Alunni H [text alunni_h 5/3 placeholder "n. alunni"]</p>
+<p>Alunni stranieri [text alunni_stranieri 5/3 placeholder "n. alunni"]</p>
+<p>Tot. Alunni [text* tot_Alunni 5/3 placeholder "n. alunni"]</p>
+
+<h3>10. Aspetti educativi e didattici</h3><br />
+<p>Analisi dei bisogni<br />
+[textarea* bisogni x5 placeholder "Descrivere brevemente i bisogni"]</p>
+<p>Obiettivi educativi trasversali ed abilità/competenze che si intendono perseguire<br />
+[textarea* ob_educativi x5 placeholder "Descrivere brevemente gli obiettivi e le abilità"]</p>
+
+<h3>11. Spese a carico delle famiglie</h3>
+<p>Euro pro capite [text spesa_famiglia 5/6]</p>
+
+<h3>12. Attrezzature e materiale didattico</h3>
+<p>[textarea materiale x5 placeholder "Indicare l'elenco del materiale"]</p>
+<p>Prenventivo di spesa Euro [text preventivo_materiale 6/6]</p>
+
+<h3>13. Procedura operativa</h3>
+<h4>Contenuti/attività</h4>
+<p>[textarea* contenuti x5 placeholder "Descrivere brevemente i contenuti e le attività previste dal progetto"]</p>
+
+<h4>Metodologie utilizzate</h4>
+<p>[checkbox* metodologie "Lezione frontale" "Cooperative learning" "Giochi propedeutici" "Animazione espressiva e ludica" "Lavoro di gruppo" "Classi aperte" "Sperimentazione e ricerca" "Lavoro individuale" "Progettazione partecipata" "Altro"]</p>
+
+<h4>Strumenti/attrezzature e spazi</h4>
+<p>[checkbox* strumenti "Linguaggi non verbali" "Materiali di facile consumo" "Materiali riciclabili" "Sussidi multimediali" "Sussidi didattici" "Lettura animata" "Uscite sul territorio" "Aula informatica" "Laboratori-Palestra" "Aule-classi" "Altro"]</p>
+
+<h4>Modalità di verifica</h4>
+<p>[checkbox* verifica "Osservazioni sistematiche e occasionali" "Test" "Avvio all'autovalutazione" "Altro"]</p>
+
+<h4>Prodotti attesi</h4>
+<p>[checkbox* prodotti "Mostra elaborati" "Pubblicizzazione sul sito d'Istituto" "Rappresentazione/spettacolo" "Giochi sportivi/tornei" "Altro"]</p>
+
+<p>Mail per ricevuta [email* email-referente default:user_email] </p>
+<p>[submit "Invia il progetto"]</p>
