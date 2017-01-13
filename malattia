@@ -1,0 +1,37 @@
+<label> Il tuo cognome e nome (richiesto)
+    [hidden nome-cognome default:user_display_name] </label>
+
+<label>il tuo ruolo: [select* ruolo include_blank "docente" "collaboratore scolastico" "ass. amministrativo" "dsga"]</label>
+
+<label>il tuo contratto: a tempo [checkbox* contratto "indeterminato" "determinato 31/08" "determinato 30/06" "supplente breve saltuario" "pagato DPSV" "pagato da scuola"]</label>
+
+<label> la tua sede di servizio (richiesto) [select* scuola-grado include_blank "infanzia" "primaria" "secondaria" "ufficio"]</label> 
+
+<label>plesso di [select* scuola-sede include_blank "Garlate" "Olginate" "Valgreghentino"]</label>
+
+<label>con il seguente orario di servizio
+   [text orario]</label>
+
+<label>giorni di assenza dal [date data-inizio date-format:dd/mm/yy 7/7]</label> al <label>[date data-fine date-format:dd/mm/yy 7/7]</label>
+
+<label>totale giorni di assenza: [number* giorni-ass min:0]</label>
+
+<label>motivo dell'assenza:
+    [select* motivo-ass include_blank "malattia" "visita specialistica/analisi cliniche" "ricovero ospedialiero/post ricovero" "infortunio sul lavoro" "altro"]</label>
+
+<label>se selezionato altro specificare il motivo dell'assenza:
+     [text motivo-ass-altro]</label>
+
+<h3>Domicilio durante l'assenza:</h3>
+
+<label>città: [text* domicilio-citta]</label>
+
+<label>via [text* domicilio-via]</label> <label>numero [number domicilio-n.civico min:0]</label>
+
+<label>telefono [tel domicilio-telefono minlength:10 maxlength:15 10/10]</label>
+
+<label>File da allegare:[file allegato filetypes:doc|pdf|jpg|jpeg|png|docx|odt|odp|ppt]</label>
+
+<label>[hidden email-docente default:user_email] </label>
+
+[submit "Invia la domanda"]
