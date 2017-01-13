@@ -1,0 +1,50 @@
+<p>A. S. 2015-2016 - Scuola [select scuola include_blank "dell'infanzia" "primaria" "secondaria"] Plesso [select plesso include_blank "Garbagnate" "Nostra Famiglia" "2 padiglione" "3 padiglione" "5 padiglione" "Calvino" "Segantini" "Wojtyla"]</p>
+
+<h3>1. Denominazione progetto</h3>
+<p>[select* nome-progetto include_blank "A colpi di libri" "A scuola di sport" "Alfabetizzazione - Wojtyla" "Animiamo le stagioni abbinate ai colori" "Consulenza psicopedagogica - Garbagnate" "Dire fare riutilizzare e riciclare" "Educare all'affettività - Calvino" "Educazione all'affettività - Wojtyla" "Educazione alla cittadinanza" "Il Medioevo tra storia arte e tradizioni." "In cammino con le emozioni" "Insieme in festa" "L'emozione dei suoni" "La grande guerra" "La vita quotidiana nel medioevo" "Le briciole di Pollicino, momenti per stare insieme." "Le nostre merende" "Madrelingua - Wojtyla" "Noi e l'ambiente" "Nonni su Internet" "Opera domani - Calvino" "Opera domani - Wojtyla" "Orientamento" "Per mangiarti meglio" "Pet therapy" "Progetto &quot;Gioco - Sport &quot;" "Progetto css" "Progetto Grafica " "Progetto inglese 5 anni" "Progetto Nuoto" "Progetto traforo" "Progetto Trinity - certificazione esterna " "Scacchi" "Settimane dello sport" "Shoah" "T come... Turandot (Opera Kids)" "Terzo tempo!" "Ti racconto una storia " "Tracce di me e passi verso gli altri" "Tutti in piscina... a Bosisio Parini" "Un libro per me"]</p>
+
+<h3>2. Insegnante referente</h3>
+<p>[text* referente default:user_display_name]</p>
+
+<h3>3. Altre persone o enti coinvolti (crocettare e specificare)</h3><br />
+<p>[checkbox enti "Esperti esterni in qualità di docenti" "Consulenti" "Enti locali" "Coni" "Enti di promozione" "Sponsor" "Progetto in rete" "Altri enti esterni" "Famiglie" "Docenti dell'Istituto Comprensivo" "Altro"]</p>
+<p>[text ente]</p>
+
+<h3>4. Durata ore</h3>
+<p>[text* durata 5/3]</p>
+
+<h3>5. Partecipazione ad iniziative di aggiornamento dei docenti</h3>
+<p>[radio aggiorn-doc "si" "no"]
+
+<h3>6. Destinatari</h3><br />
+<p>Classi [text* classi placeholder "indicare le classi"]</p>
+<p>Alunni H [text alunni_h 5/3 placeholder "n. alunni"]</p>
+<p>Alunni stranieri [text alunni_stranieri 5/3 placeholder "n. alunni"]</p>
+<p>Tot. Alunni [text* tot_Alunni 5/3 placeholder "n. alunni"]</p>
+
+<h3>7. Gli obiettivi educativi e didattici previsti sono stati raggiunti?</h3>
+<p>[radio obiettivi "si" "no"]</p>
+
+<h3>8. Gli eventuali esperti hanno dimostrato adeguata preparazione e professionalità?</h3>
+<p>[radio prof-esperti "si" "no"]
+
+<h3>9. Metodologie utilizzate</h3>
+<p>[checkbox* metodologie "Lezione frontale" "Cooperative learning" "Giochi propedeutici" "Animazione espressiva e ludica" "Lavoro di gruppo" "Classi aperte" "Sperimentazione e ricerca" "Lavoro individuale" "Progettazione partecipata" "Altro"]</p>
+
+<h3>10. Strumenti/attrezzature e spazi</h3>
+<p>[checkbox* strumenti "Linguaggi non verbali" "Materiali di facile consumo" "Materiali riciclabili" "Sussidi multimediali" "Sussidi didattici" "Lettura animata" "Uscite sul territorio" "Aula informatica" "Laboratori-Palestra" "Aule-classi" "Altro"]</p>
+
+<h3>11. Modalità di verifica</h3>
+<p>[checkbox* verifica "Osservazioni sistematiche e occasionali" "Test" "Avvio all'autovalutazione" "Altro"]</p>
+
+<h3>12. Produzioni</h3>
+<p>[checkbox* prodotti "Mostra elaborati" "Pubblicizzazione sul sito d'Istituto" "Rappresentazione/spettacolo" "Giochi sportivi/tornei" "Altro"]</p>
+
+<h3>13. Il rapporto costo/servizio è sembrato adeguato?</h3>
+<p>[radio costo-servizio "si" "no"]
+
+<h3>14. Si pensa ad un'eventuale riproposta del progetto?</h3>
+<p>[radio riproposta "si" "no"]
+
+<p>Mail per ricevuta [email* email-referente default:user_email] </p>
+<p>[submit "Invia la verifica"]</p>
