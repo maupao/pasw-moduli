@@ -1,0 +1,14 @@
+<label>Il sottoscritto/a [text* nome default:user_display_name]</label>
+
+<label>in servizio presso la scuola [select scuola include_blank "dell'infanzia" "primaria" "secondaria"]</label>
+
+<label> nel plesso [select plesso include_blank "Garbagnate" "Nostra Famiglia" "2 padiglione" "3 padiglione" "5 padiglione" "Calvino" "Segantini" "Wojtyla"]</label>
+
+<label>Propone la propria candidatura per partecipare ai lavori della/e seguenti commissioni:<br />
+[checkbox commissione use_label_element "GLI" "PTOF/Autovalutazione" "Orientamento/Open Day"]</label>
+
+<label>Mail per ricevuta [email* email-docente default:user_email] </label>
+
+<label> Cordiali saluti [text* firma default:user_display_name]</label>
+
+[submit "Invia la candidatura"]
