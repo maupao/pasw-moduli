@@ -1,0 +1,22 @@
+[hidden nome-cognome default:user_display_name]
+[hidden email-docente default:user_email]
+
+<p>il tuo ruolo: [select* ruolo include_blank "docente TD" "docente TI" "ATA TD" "ATA TI"]</p>
+
+<p>plesso di [select* scuola-sede include_blank "infanzia La Nostra Famiglia" "infanzia Garbagnate Rota" "primaria Calvino" "primaria Segantini" "primaria NF 3 padiglione" "primaria NF 5 padiglione" "secondaria Wojtyla" "secondaria NF 2 padiglione" "secondaria NF 3 padiglione" "segreteria"]</p>
+
+<p>segnala al responsabile di plesso [select* referente include_blank "infanzia La Nostra Famiglia|infanzia.3padiglione@comprensivobosisio.gov.it" "infanzia Garbagnate Rota|infanzia.garbagnate@comprensivobosisio.gov.it" "primaria Calvino|primaria.calvino@comprensivobosisio.gov.it" "primaria Segantini|primaria.segantini@comprensivobosisio.gov.it" "primaria NF 3 padiglione|primaria.3padiglione@comprensivobosisio.gov.it" "primaria NF 5 padiglione|primaria.5padiglione@comprensivobosisio.gov.it" "secondaria Wojtyla|secondaria.wojtyla@comprensivobosisio.gov.it" "secondaria NF 2 padiglione|secondaria.2padiglione@comprensivobosisio.gov.it" "secondaria NF 3 padiglione|secondaria.3padiglione@comprensivobosisio.gov.it"]</p>
+
+<p>richiesta giorni dal [date data-inizio date-format:dd/mm/yy 7/7] al [date data-fine date-format:dd/mm/yy 7/7]</p>
+
+<p>totale giorni di permesso: [number* giorni-ass min:0]</p>
+
+<p>motivo della richiesta:
+    [select* motivo-ass include_blank "concorsi/esami" "lutto" "matrimonio" "motivi familiari/personali" "altro"]</p>
+
+<p>se selezionato altro specificare il motivo dell'assenza:
+     [text motivo-ass-altro]</p>
+
+<p>Eventuale file da allegare:[file allegato filetypes:doc|pdf|jpg|jpeg|png|docx|odt|odp|ppt]</p>
+
+[submit "Invia la domanda"]
