@@ -1,37 +1,32 @@
-<label> Il tuo cognome e nome (richiesto)
-    [hidden nome-cognome default:user_display_name] </label>
+[hidden nome-cognome default:user_display_name]
+[hidden email-docente default:user_email]
 
-<label>il tuo ruolo: [select* ruolo include_blank "docente" "collaboratore scolastico" "ass. amministrativo" "dsga"]</label>
+<p>il tuo ruolo: [select* ruolo include_blank "docente" "collaboratore scolastico" "ass. amministrativo" "dsga"]</p>
 
-<label>il tuo contratto: a tempo [checkbox* contratto "indeterminato" "determinato 31/08" "determinato 30/06" "supplente breve saltuario" "pagato DPSV" "pagato da scuola"]</label>
+<p>il tuo contratto: a tempo [checkbox* contratto "indeterminato" "determinato 31/08" "determinato 30/06" "supplente breve saltuario" "pagato DPSV" "pagato da scuola"]</p>
 
-<label> la tua sede di servizio (richiesto) [select* scuola-grado include_blank "infanzia" "primaria" "secondaria" "ufficio"]</label> 
+<p> la tua sede di servizio (richiesto) [select* scuola-grado include_blank "infanzia" "primaria" "secondaria" "ufficio"]</p>
 
-<label>plesso di [select* scuola-sede include_blank "Garlate" "Olginate" "Valgreghentino"]</label>
+<p>plesso di [select* scuola-sede include_blank "Garlate" "Olginate" "Valgreghentino"]</p>
 
-<label>con il seguente orario di servizio
-   [text orario]</label>
+<p>giorni di assenza dal [date data-inizio date-format:dd/mm/yy 7/7]</label> al <label>[date data-fine date-format:dd/mm/yy 7/7]</p>
 
-<label>giorni di assenza dal [date data-inizio date-format:dd/mm/yy 7/7]</label> al <label>[date data-fine date-format:dd/mm/yy 7/7]</label>
+<p>totale giorni di assenza: [number* giorni-ass min:0]</p>
 
-<label>totale giorni di assenza: [number* giorni-ass min:0]</label>
+<p>motivo dell'assenza:
+    [select* motivo-ass include_blank "malattia" "visita specialistica/analisi cliniche" "ricovero ospedialiero/post ricovero" "infortunio sul lavoro" "altro"]</p>
 
-<label>motivo dell'assenza:
-    [select* motivo-ass include_blank "malattia" "visita specialistica/analisi cliniche" "ricovero ospedialiero/post ricovero" "infortunio sul lavoro" "altro"]</label>
-
-<label>se selezionato altro specificare il motivo dell'assenza:
-     [text motivo-ass-altro]</label>
+<p>se selezionato altro specificare il motivo dell'assenza:
+     [text motivo-ass-altro]</p>
 
 <h3>Domicilio durante l'assenza:</h3>
 
-<label>città: [text* domicilio-citta]</label>
+<p>città: [text* domicilio-citta]</p>
 
-<label>via [text* domicilio-via]</label> <label>numero [number domicilio-n.civico min:0]</label>
+<p>via [text* domicilio-via]</label> <label>numero [number domicilio-n.civico min:0]</p>
 
-<label>telefono [tel domicilio-telefono minlength:10 maxlength:15 10/10]</label>
+<p>telefono [tel domicilio-telefono minlength:10 maxlength:15 10/10]</p>
 
-<label>File da allegare:[file allegato filetypes:doc|pdf|jpg|jpeg|png|docx|odt|odp|ppt]</label>
-
-<label>[hidden email-docente default:user_email] </label>
+<p>File da allegare:[file allegato filetypes:doc|pdf|jpg|jpeg|png|docx|odt|odp|ppt]</p>
 
 [submit "Invia la domanda"]
