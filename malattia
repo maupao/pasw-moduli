@@ -9,7 +9,7 @@
 
 <p>plesso di [select* scuola-sede include_blank "Garlate" "Olginate" "Valgreghentino"]</p>
 
-<p>giorni di assenza dal [date data-inizio date-format:dd/mm/yy 7/7]</label> al <label>[date data-fine date-format:dd/mm/yy 7/7]</p>
+<p>giorni di assenza dal [date data-inizio date-format:dd/mm/yy 7/7] al [date data-fine date-format:dd/mm/yy 7/7]</p>
 
 <p>totale giorni di assenza: [number* giorni-ass min:0]</p>
 
