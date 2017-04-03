@@ -1,0 +1,38 @@
+#per il cambio orario
+
+[hidden nome-cognome default:user_display_name]
+[hidden email-docente default:user_email]
+
+<p>il tuo ruolo: [select* ruolo include_blank "docente TD" "docente TI" "ATA TD" "ATA TI"]</p>
+
+<p>plesso di [select* scuola-sede include_blank "infanzia La Nostra Famiglia" "infanzia Garbagnate Rota" "primaria Calvino" "primaria Segantini" "primaria NF 3 padiglione" "primaria NF 5 padiglione" "secondaria Wojtyla" "secondaria NF 2 padiglione" "secondaria NF 3 padiglione" "segreteria"]</p>
+
+<p>segnala al responsabile di plesso [select* referente include_blank "infanzia La Nostra Famiglia|infanzia.3padiglione@comprensivobosisio.gov.it" "infanzia Garbagnate Rota|infanzia.garbagnate@comprensivobosisio.gov.it" "primaria Calvino|primaria.calvino@comprensivobosisio.gov.it" "primaria Segantini|primaria.segantini@comprensivobosisio.gov.it" "primaria NF 3 padiglione|primaria.3padiglione@comprensivobosisio.gov.it" "primaria NF 5 padiglione|primaria.5padiglione@comprensivobosisio.gov.it" "secondaria Wojtyla|secondaria.wojtyla@comprensivobosisio.gov.it" "secondaria NF 2 padiglione|secondaria.2padiglione@comprensivobosisio.gov.it" "secondaria NF 3 padiglione|secondaria.3padiglione@comprensivobosisio.gov.it" "dsga|segretaria@comprensivobosisio.gov.it"]</p>
+
+<p>indica il tipo di cambio<br />
+[checkbox tipo-cambio exclusive "sul proprio orario" "con un collega"]</p>
+
+<p>indica la motivazione del cambio<br />
+[text motivazione-cambio]</p>
+
+<p>indica il nome del collega coinvolto nel cambio [text collega]</p>
+
+<h4>Orario di servizio del richiedente</h4>
+<p>indica il giorno [date data1 date-format:dd/mm/yy 10/10]</p>
+<p>indica l'orario di servizio modificato dalle [time dalle-new size:6 time-format:HH:mm step-minute:5 min-hour:7 max-hour:19] alle [time alle-new size:6 step-minute:5 time-format:HH:mm min-hour:7 max-hour:19]</p>
+<p>indica l'orario di servizio abituale per quel giorno dalle [time dalle-old size:6 step-minute:5 time-format:HH:mm min-hour:7 max-hour:19] alle [time alle-old size:6 step-minute:5 time-format:HH:mm min-hour:7 max-hour:19]</p>
+
+<p>indica il giorno [date data2 date-format:dd/mm/yy 10/10]</p>
+<p>indica l'orario di servizio modificato dalle [time dalle-new2 size:6 step-minute:5 min-hour:7 max-hour:19 time-format:HH:mm] alle [time alle-new2 size:6 step-minute:5 min-hour:7 max-hour:19 time-format:HH:mm]</p>
+<p>indica l'orario di servizio abituale per quel giorno dalle [time dalle-old2 size:6 step-minute:5 min-hour:7 max-hour:19 time-format:HH:mm] alle [time alle-old2 size:6 step-minute:5 min-hour:7 max-hour:19 time-format:HH:mm]</p>
+
+<h4>Orario di servizio del collega coinvolto nel cambio</h4>
+<p>indica il giorno [date data-coll1 date-format:dd/mm/yy 10/10]</p>
+<p>indica l'orario di servizio modificato dalle [time dalle-coll-new size:6 step-minute:5 time-format:HH:mm min-hour:7 max-hour:19] alle [time alle-coll-new size:6 step-minute:5 time-format:HH:mm min-hour:7 max-hour:19]</p>
+<p>indica l'orario di servizio abituale per quel giorno dalle [time dalle-coll-old size:6 step-minute:5 time-format:HH:mm min-hour:7 max-hour:19] alle [time alle-coll-old size:6 step-minute:5 time-format:HH:mm min-hour:7 max-hour:19]</p>
+
+<p>indica il giorno [date data-coll2 date-format:dd/mm/yy 10/10]</p>
+<p>indica l'orario di servizio modificato dalle [time dalle-coll-new2 size:6 step-minute:5 min-hour:7 max-hour:19 time-format:HH:mm] alle [time alle-coll-new2 size:6 step-minute:5 min-hour:7 max-hour:19 time-format:HH:mm]</p>
+<p>indica l'orario di servizio abituale per quel giorno dalle [time dalle-coll-old2 size:6 step-minute:5 min-hour:7 max-hour:19 time-format:HH:mm] alle [time alle-coll-old2 size:6 step-minute:5 min-hour:7 max-hour:19 time-format:HH:mm]</p>
+
+[submit "Invia la richiesta"]
