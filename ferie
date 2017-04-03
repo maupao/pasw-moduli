@@ -1,0 +1,21 @@
+#modulo per la richiesta delle ferie
+
+[hidden nome-cognome default:user_display_name]
+[hidden email-docente default:user_email]
+
+<p>il tuo ruolo: [select* ruolo include_blank "docente TD" "docente TI" "ATA TD" "ATA TI"]</p>
+
+<p>plesso di [select* scuola-sede include_blank "scuola 1" "scuola 2" "scuola 3" "scuola 4" "scuola 5" "scuola 6" "scuola 7" "scuola 8" "scuola 9" "segreteria"]</p>
+
+<p>richiesta giorni dal [date data-inizio date-format:dd/mm/yy 10/10] al [date data-fine date-format:dd/mm/yy 10/10]</p>
+
+<p>totale giorni richiesti: [number* giorni-ass min:0]</p>
+
+<p>tipo di ferie richieste:
+    [select* motivo-ass include_blank "art. 13 C.C.N.L. a.s. precedente" "art. 13 C.C.N.L. a.s. corrente" "festività soppresse (legge 9310/107)"]</p>
+
+<p>[checkbox pres-allegato "Allega a questa comunicazione il file relativo alla richiesta" "Presenterà il giustificativo in un secondo momento"]</p>
+
+<p>Eventuale file da allegare:[file allegato filetypes:doc|pdf|jpg|jpeg|png|docx|odt|odp|ppt]</p>
+
+[submit "Invia la richiesta"]
