@@ -1,0 +1,53 @@
+#modulo per la richiesta del permesso per legge 104
+
+[hidden nome-cognome default:user_display_name]
+[hidden email-docente default:user_email]
+
+<p>Ruolo: [select* ruolo include_blank "docente" "collaboratore scolastico" "ass. amministrativo" "dsga"]</p>
+<p>contratto a tempo [checkbox* contratto exclusive "indeterminato" "determinato"]</p>
+<p>sede di servizio (richiesto) [select* scuola-grado include_blank "infanzia" "primaria" "secondaria" "ufficio"]</p> 
+
+<p>plesso di [select scuola-sede include_blank "cittaà1" "città2" "città3"]</p>
+
+<p>assenza per [select* tipo-104 "sé stessi" "assistenza ad un familiare"]</p>
+
+<p>indicare i dati del familiare:<br />
+Cognome e Nome [text dati-familiare] grado di parentela [text parentela-familiare]</p>
+
+
+<p><strong>Se assenza giornaliera:</strong></p>
+
+<p>giorni di assenza dal [date data-inizio date-format:dd/mm/yy 10/10] al [date data-fine date-format:dd/mm/yy 10/10]</p>
+
+<p>totale giorni di assenza: [number giorni-ass min:0]</p>
+
+<p>totale giorni di assenza già usufruti nel mese corrente: [select giorni-mese include_blank "0" "1" "2"]</p>
+
+<p><strong>Se assenza oraria:</strong></p>
+<p>giorno dell'assenza [date data-ass-or date-format:dd/mm/yy 10/10]</p>
+
+<p>ore di assenza dalle [time dalle size:6 step-minute:5 time-format:HH:mm min-hour:7 max-hour:19] alle [time alle size:6 step-minute:5 time-format:HH:mm min-hour:7 max-hour:19]</p>
+
+<p>totale ore di assenza già usufruita nel mese corrente: ore [number ore-fruite min:0 10/10] minuti [number minuti-fruiti min:0 step:30 max:30 10/10]</p>
+
+<hr />
+
+<h4>Dichiaro</h4>
+<ol>
+<li>che il suddetto familiare non è ricoverato a tempo pieno in strutture pubbliche e/o private</li>
+<li>che nessun altro familiare usufruisce dei sopra indicati permessi</li>
+<li>di essere l'unica persona in grado di provvedere all'assistenza continuativa ed esclusiva</li>
+<li>di essere consapevole che le agevolazioni sono uno strumento di assistenza del disabile e, pertanto, il riconoscimento delle stesse comporta la conferma dell'impegno - morale oltre che giuridico - a prestare effettivamente la propria opera di assistenza</li>
+<li>che il familiare risulta assente dal proprio posto di lavoro o presta attività lavorativa ma necessita comunque del permesso o non effettua attività lavorativa</li>
+<li>di impegnarmi a comunicare in modo tempestivo ogni variazione della situazione di fatto e di diritto da cui consegua la perdita della legittimazione alle agevolazioni</li>
+</ol>
+
+<hr />
+
+<p>Avviso al responsabile di plesso [select* referente include_blank "scuola 1|referente@scuola1.com" "scuola 2|referente@scuola2.com" "scuola 3|referente@scuola3.com" "scuola 4|referente@scuola4.com" "scuola 5|referente@cuola5.com" "scuola 6|referente@scuola6.com" "scuola 7|referente@scuola7.com" "Dsga per il personale ATA|dsga@scuola.com"]</p>
+
+<p>[checkbox pres-allegato exclusive "Allega a questa comunicazione il file relativo alla richiesta" "Presenterà il giustificativo in un secondo momento"]</p>
+
+<p>File da allegare:[file allegato filetypes:doc|pdf|jpg|jpeg|png|docx|odt|odp|ppt]</p>
+
+[submit "Invia la domanda"]
