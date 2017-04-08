@@ -1,0 +1,21 @@
+[hidden nome-cognome default:user_display_name]
+[hidden email-docente default:user_email]
+
+<p>il tuo ruolo: [select* ruolo include_blank "docente TD" "docente TI" "ATA TD" "ATA TI"]</p>
+
+<p>plesso di [select* scuola-sede include_blank "scuola 1" "scuola 2" "scuola 3" "scuola 4" "scuola 5" "scuola 6" "scuola 7" "scuola 8" "scuola 9" "segreteria"]</p>
+
+<p>indica il giorno del permesso [date* data-perm date-format:dd/mm/yy 10/10]</p>
+
+<p>indica l'orario: dalle [time* dalle size:6 time-format:HH:mm step-minute:1 min-hour:7 max-hour:18] alle [time* alle size:6 time-format:HH:mm step-minute:1 min-hour:7 max-hour:18] per n. ore [number* ore] e n. minuti [number* min]</p>
+<p>indica il motivo: [text* motivo-perm]</p>
+<p>indica il/la collega che ti sostituisce [text sostituto]</p>
+<p>indica la modalità di recupero delle ore concesse:<br />
+[checkbox es-servizio "le ore verranno recuperate secondo le esigenze di servizio"]<br />
+il [date data-rec1 date-format:dd/mm/yy 10/10] dalle [time dalle-rec1 size:6 time-format:HH:mm step-minute:1 min-hour:7 max-hour:19] alle [time alle-rec1 size:6 time-format:HH:mm step-minute:1 min-hour:7 max-hour:19] ore [number ore1 min:0] minuti [number min1 min:0]<br />
+il [date data-rec2 date-format:dd/mm/yy 10/10] dalle [time dalle-rec2 size:6 time-format:HH:mm step-minute:1 min-hour:7 max-hour:19] alle [time alle-rec2 size:6 time-format:HH:mm step-minute:1 min-hour:7 max-hour:19] ore [number ore1 min:0] minuti [number min1 min:0]<br />
+il [date data-rec3 date-format:dd/mm/yy 10/10] dalle [time dalle-rec3 size:6 time-format:HH:mm step-minute:1 min-hour:7 max-hour:19] alle [time alle-rec3 size:6 time-format:HH:mm step-minute:1 min-hour:7 max-hour:19] ore [number ore1 min:0] minuti [number min1 min:0]<br />
+il [date data-rec4 date-format:dd/mm/yy 10/10] dalle [time dalle-rec4 size:6 time-format:HH:mm step-minute:1 min-hour:7 max-hour:19] alle [time alle-rec4 size:6 time-format:HH:mm step-minute:1 min-hour:7 max-hour:19] ore [number ore1 min:0] minuti [number min1 min:0]<br />
+</p>
+
+[submit "Invia la richiesta"]

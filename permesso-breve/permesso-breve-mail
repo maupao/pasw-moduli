@@ -1,0 +1,20 @@
+<h2>Richiesta di permesso breve di [nome-cognome]</h2>
+
+<p>Il sottoscritto <strong>[nome-cognome]</strong>, [ruolo] in servizio nel corrente anno scolastico presso <strong>[scuola-sede]</strong></p>
+<h4 align=center>CHIEDE</h4>
+<p>di usufruire in data <strong>[data-perm]</strong> di un permesso/recupero di n° ore <strong>[ore]</strong> e n° minuti <strong>[min]</strong></p>
+<p>dalle <strong>[dalle]</strong> alle <strong>[alle]</strong>.</p>
+<p>per il seguente motivo: [motivo-perm]</p>
+<p>In tali ore il/la sottoscritto/a sarà sostituito/a dal/dalla collega [sostituto]</p>
+<p>In caso di concessione del cambio richiesto, inoltre, dichiara che n° ore [ore] e minuti [min] non prestati (a completamento orario), saranno recuperati/sono stati recuperati in data:</br>
+il <strong>[data-rec1]</strong> dalle <strong>[dalle-rec1]</strong> alle <strong>[alle-rec1]</strong> = n° h <strong>[ore1]</strong> e min. <strong>[min1]</strong><br />
+il [data-rec2] dalle [dalle-rec2] alle [alle-rec2] = n° h ore2] e min. [min2]<br />
+il [data-rec3] dalle [dalle-rec3] alle [alle-rec3] = n° h [ore3] e min. [min3]<br />
+il [data-rec4] dalle [dalle-rec4] alle [alle-rec4] = n° h [ore4] e min. [min4]<br />
+[es-servizio]<br />
+</p>
+
+<p>in fede<br />
+[nome-cognome]</p>
+--
+Questa e-mail è stata inviata da un modulo di permesso breve dal sito dell'Istituto Comprensivo xxx (http://www.xxx.gov.it)
