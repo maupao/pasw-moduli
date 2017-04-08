@@ -1,0 +1,49 @@
+#mail che viene inviata in segreteria
+
+<h2>Richiesta di cambio orario di [nome-cognome]</h2>
+
+<p>Il sottoscritto <strong>[nome-cognome]</strong>, [ruolo] in servizio nel corrente anno scolastico presso <strong>[scuola-sede]</strong></p>
+<h4 align=center>CHIEDE</h4>
+<p>di poter effettuare un <strong>cambio [tipo-cambio]</strong> per [motivazione-cambio] come segue</p>
+<p>il giorno <strong>[data1]</strong></p>
+<p>sarà in servizio dalle <strong>[dalle-new]</strong> alle <strong>[alle-new]</strong></p>
+<p>anzichè dalle <strong>[dalle-old]</strong> alle <strong>[alle-old]</strong></p>
+<p>mentre il giorno <strong>[data2]</strong></p>
+<p>sarà in servizio dalle <strong>[dalle-new2]</strong> alle <strong>[alle-new2]</strong></p>
+<p>anzichè dalle <strong>[dalle-old2]</strong> alle <strong>[alle-old2]</strong></p>
+<p>Il collega <strong>[collega]</strong></p>
+<p>il giorno <strong>[data-coll1]</strong></p>
+<p>sarà in servizio dalle <strong>[dalle-coll-new]</strong> alle <strong>[alle-coll-new]</strong></p>
+<p>anzichè dalle <strong>[dalle-coll-old]</strong> alle <strong>[alle-coll-old]</strong></p>
+<p>mentre il giorno <strong>[data-coll2]</strong></p>
+<p>sarà in servizio dalle <strong>[dalle-coll-new2]</strong> alle <strong>[alle-coll-new2]</strong></p>
+<p>anzichè dalle <strong>[dalle-coll-old2]</strong> alle <strong>[alle-coll-old2]</strong></p>
+
+<p>in fede<br>
+[nome-cognome]</p>
+--
+Questa e-mail è stata inviata da un modulo di cambio orario dal sito dell'Istituto Comprensivo xxx (http://www.xxx.gov.it)
+
+#mail inviata al docente come ricevuta
+
+<p>Il sottoscritto <strong>[nome-cognome]</strong>, [ruolo] in servizio nel corrente anno scolastico presso <strong>[scuola-sede]</strong></p>
+<h4 align=center>CHIEDE</h4>
+<p>di poter effettuare un <strong>cambio [tipo-cambio]</strong> per [motivazione-cambio] come segue</p>
+<p>il giorno <strong>[data1]</strong></p>
+<p>sarà in servizio dalle <strong>[dalle-new]</strong> alle <strong>[alle-new]</strong></p>
+<p>anzichè dalle <strong>[dalle-old]</strong> alle <strong>[alle-old]</strong></p>
+<p>mentre il giorno <strong>[data2]</strong></p>
+<p>sarà in servizio dalle <strong>[dalle-new2]</strong> alle <strong>[alle-new2]</strong></p>
+<p>anzichè dalle <strong>[dalle-old2]</strong> alle <strong>[alle-old2]</strong></p>
+<p>Il collega <strong>[collega]</strong></p>
+<p>il giorno <strong>[data-coll1]</strong></p>
+<p>sarà in servizio dalle <strong>[dalle-coll-new]</strong> alle <strong>[alle-coll-new]</strong></p>
+<p>anzichè dalle <strong>[dalle-coll-old]</strong> alle <strong>[alle-coll-old]</strong></p>
+<p>mentre il giorno <strong>[data-coll2]</strong></p>
+<p>sarà in servizio dalle <strong>[dalle-coll-new2]</strong> alle <strong>[alle-coll-new2]</strong></p>
+<p>anzichè dalle <strong>[dalle-coll-old2]</strong> alle <strong>[alle-coll-old2]</strong></p>
+
+<p>in fede<br>
+[nome-cognome]</p>
+--
+Questa e-mail è stata inviata da un modulo di cambio orario dal sito dell'Istituto Comprensivo xxx (http://www.xxx.gov.it)

@@ -1,0 +1,9 @@
+#Testo della mail che viene inviata in segreteria
+
+
+<p>Il sottoscritto [nome-cognome] in servizio presso codesto istituto in qualità di [ruolo] con contratto a tempo [contratto] presso la scuola [scuola-grado] di [scuola-sede] con il seguente orario di servizio: [orario]</p>
+<h4>COMUNICA</h4>
+<p>alla S.V. di assentarsi dal [data-inizio] al [data-fine] per complessivi giorni [giorni-ass] per [motivo-ass] [motivo-ass-altro].</p>
+<p>Durante il periodo di assenza il sottoscritto sarà domiciliato in [domicilio-citta], via [domicilio-via] n. [domicilio-n.civico], tel. [domicilio-telefono].</p>
+<p>in fede<br>
+[nome-cognome]</p>
