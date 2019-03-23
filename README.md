@@ -14,7 +14,7 @@ Nella configurazione che sto usando ho installato questi plugin:
 
 * Contact form 7
 * contact form 7 datapicker
-* Contact form DB, per visualizzare i dati raccolti, ma al momento attuale (marzo 219) non è più supportato
+* Contact form DB, per visualizzare i dati raccolti. Non è presente nei repository dei plugin di wordpress, va installato via ftp dopo aver [scaricato il codice](https://github.com/mdsimpson/contact-form-7-to-database-extension/releases)
 
 ## Un tocco di estetica
 
