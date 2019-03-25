@@ -1,0 +1,61 @@
+# Mail per richiesta ferie e festività soppresse
+
+<h3>Richiesta ferie/festività soppresse di [nome-cognome]</h3>
+
+Il/La sottoscritto/a [nome-cognome] in servizio presso codesta istituzione scolastica in qualità di [ruolo] con contratto di lavoro a tempo [contratto]
+<h3><align=center>CHIEDE</h3>
+<p>a norma delle disposizioni previste dal vigente C.C.N.L. di usufruire delle ferie relative al corrente anno scolastico e delle festività soppressi di cui alla legge n. 93/77 art. 1 lettere A e B come di seguito specificato:</p>
+
+<h3>Festività soppresse</h3>
+<pdal [soppr-inizio1] al [soppr-fine1]</p>
+
+<p>dal [soppr-inizio2] al [soppr-fine2]</p>
+
+<p>dal [soppr-inizio3] al [soppr-fine3]</p>
+
+<p>dal [soppr-inizio4] al [soppr-fine4]</p>
+
+<p>per un totale di n. [giorni-ass-soppr] di giorni di assenza.</p>
+
+<p style="margin-left: 28px;">(giorni già fruiti [giorni-fruiti-soppr])</p>
+
+<h3>Ferie anno precendente</h3>
+
+<p>dal [data-inizio-prec1] al [data-fine-prec1]</p>
+
+<p>dal [data-inizio-prec2] al [data-fine-prec2]</p>
+
+<p>dal [data-inizio-prec3] al [data-fine-prec3]</p>
+
+<p>dal [data-inizio-prec4] al [data-fine-prec4]</p>
+
+<p>per un totale di n. [giorni-ass-ferie-prec] di giorni di assenza.</p>
+
+<p style="margin-left: 28px;">(giorni già fruiti [giorni-fruiti-ferie-prec])</p>
+
+<h3>Ferie anno corrente</h3>
+
+<p>dal [data-inizio1] al [data-fine1]</p>
+
+<p>dal [data-inizio2] al [data-fine2]</p>
+
+<p>dal [data-inizio3] al [data-fine3]</p>
+
+<p>dal [data-inizio4] al [data-fine4]</p>
+
+<p>per un totale di n. [giorni-ass-ferie] di giorni di assenza.</p>
+
+<p style="margin-left: 28px;">(giorni già fruiti [giorni-fruiti-ferie])</p>
+
+<h3>Santo patrono</h3>
+<p>dal [patr-inizio1] al [patr-fine1]</p>
+
+<p>Dichiara che il proprio recapito nel periodo sopra indicato sarà il seguente:</p>
+
+<p>via [domicilio-via], n. [domicilio-n.civico], comune di [domicilio-citta]</p>
+
+<p>In fede<br />
+[nome-cognome]</p>
+
+--
+Questa mail è stata inviata come richiesta ferie/festività soppresse per Istituto xxxx (https://www.xxxx.gov.it)
