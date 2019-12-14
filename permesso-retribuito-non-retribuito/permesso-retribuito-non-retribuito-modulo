@@ -1,0 +1,35 @@
+[hidden nome-cognome default:user_display_name]
+[hidden email-docente default:user_email]
+
+<p>contratto a tempo [checkbox* contratto exclusive "indeterminato" "determinato"]</p>
+<p>sede di servizio (richiesto) [select* scuola-grado include_blank "infanzia" "primaria" "secondaria"]</p> 
+
+<p>plesso di [select* scuola-sede include_blank "Garlate" "Olginate" "Valgreghentino" "più plessi"]</p>
+<p>giorni di assenza dal [date data-inizio date-format:dd/mm/yy 10/10] [date data-fine date-format:dd/mm/yy 10/10]</p>
+
+<p>totale giorni di assenza: [number* giorni-ass min:0]</p>
+
+<p>permesso retribuito per:
+    [select perm-retr include_blank "motivi personali/familiari" "lutto" "matrimonio" "concorso/esami" "donazione sangue" "sindacale" "elettorale (nomina del comune)" "altro"]</p>
+
+<p>Se selezionato altro specificare il motivo [text altro-pr]</p>
+
+<p>permesso non retribuito per: [select perm-nonretr include_blank "motivi personali/familiari" "concorso/esami" "altro"]</p>
+
+<p>Se selezionato altro specificare il motivo [text altro-pnr]</p>
+
+<p style="margin-left: 28px;">(già fruiti per lo stesso motivo [number giorni-fruiti min:1 max:36] giorni)</p>
+
+<p>Indicare la motivazione per esteso <br/>
+[text motivazione]</p>
+
+<p>[checkbox* dich-cons "sono consapevole che in caso di falsa dichiarazione verranno applicate le sanzioni previste dal codice penale, che comporta inoltre la decadenda dal beneficio ottenuto sulla base della dichiarazione non veritiera"]</p>
+
+<p>Avviso al responsabile di plesso [select* referente include_blank "infanzia|mail@mail.it " "primaria|mail@mail.it" "secondaria|mail@mail.it"]</p>
+
+<p>[checkbox pres-allegato exclusive "Allego a questa comunicazione il file relativo alla richiesta" "Presenterò il giustificativo in un secondo momento"]</p>
+
+<p>File da allegare:[file allegato filetypes:doc|pdf|jpg|jpeg|png|docx|odt|odp|ppt]</p>
+
+
+[submit "Invia la domanda"]

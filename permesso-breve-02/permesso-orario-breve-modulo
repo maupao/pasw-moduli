@@ -1,0 +1,31 @@
+[hidden nome-cognome default:user_display_name]
+[hidden email-docente default:user_email]
+
+<p>Contratto a tempo [checkbox* contratto exclusive "indeterminato" "determinato"]</p>
+<p>sede di servizio (richiesto) [select* scuola-grado include_blank "infanzia" "primaria" "secondaria"]</p> 
+
+<p>plesso di [select* scuola-sede include_blank "Garlate" "Olginate" "Valgreghentino" "più plessi"]</p>
+<p>indica il tuo orario di servizio per il giorno del permesso:<br />
+ dalle [time dalle1 size:6 step-minute:5 time-format:HH:mm min-hour:7 max-hour:19] alle [time alle1 size:6 step-minute:5 time-format:HH:mm min-hour:7 max-hour:19]<br />
+ dalle [time dalle2 size:6 step-minute:5 time-format:HH:mm min-hour:7 max-hour:19] alle [time alle2 size:6 step-minute:5 time-format:HH:mm min-hour:7 max-hour:19]</p>
+
+<p>giorno del permesso [date data-perm date-format:dd/mm/yy 10/10]  dalle [time dalle-perm size:6 step-minute:5 time-format:HH:mm min-hour:7 max-hour:19] alle [time alle-perm size:6 step-minute:5 time-format:HH:mm min-hour:7 max-hour:19]</p>
+
+<p>totale assenza: <br />
+ore [number* ore-ass min:0]<br />
+minuti [number* min-ass min:0] </p>
+
+<p>indica il motivo del permesso:
+    [text motivo]</p>
+
+<p>Sarò sostituito da [text sostituzione placeholder "indicare il nome del sostituto o da definirsi"]
+
+<p>il recupero è [select recupero include_blank "da concordare" "già concordato"]</p>
+
+<p>(Da compilare solo in caso di recupero già definito) il recupero sarà effettuato il [date data-recupero date-format:dd/mm/yy 10/10]  dalle [time dalle-recupero size:6 step-minute:5 time-format:HH:mm min-hour:7 max-hour:19] alle [time alle-recupero size:6 step-minute:5 time-format:HH:mm min-hour:7 max-hour:19]
+
+<p>Avviso al responsabile di plesso [select* referente include_blank "infanzia01|mail@mail.it" "primaria|mail@mail.it" "secondaria|mail@mail.it"]</p>
+
+<p>Eventuale file da allegare:[file allegato filetypes:doc|pdf|jpg|jpeg|png|docx|odt|odp|ppt]</p>
+
+[submit "Invia la domanda"]

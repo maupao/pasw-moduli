@@ -1,0 +1,22 @@
+<h3>Richiesta permesso breve di [nome-cognome]<h3>
+
+<p>Il sottoscritto <strong>[nome-cognome]</strong> in servizio presso codesto istituto in qualità di [ruolo] con contratto a tempo [contratto] presso la [scuola-grado] di [scuola-sede] con il seguente orario di servizio:</br>
+dalle [dalle1] alle [alle1]</br>
+dalle [dalle2] alle [alle2]</p>
+<h4 align=center>CHIEDE</h4>
+<p>alla S.V. di assentarsi</p>
+<p>il <strong>[data-perm]</strong> dalle <strong>[dalle-perm]</strong> alle <strong>[alle-perm]</strong></p>
+<p>per un totale di ore <strong>[ore-ass].[min-ass]</strong></p>
+<p>per il seguente motivo: [motivo]</p>
+
+<p>Durante il periodo sarò sostituito: [sostituzione]</p>
+
+<p>Il recupero del permesso [recupero]</p>
+
+<p>Le ore saranno recuperate il giorno [data-recupero] dalle [dalle-recupero] alle [alle-recupero]
+
+<p>In fede</br>
+[nome-cognome]</p>
+
+--
+Questa e-mail è stata inviata da un modulo di richiesta permesso breve dal sito dell'Istituto Comprensivo di xxx (https://www.xxxxx.edu.it)
