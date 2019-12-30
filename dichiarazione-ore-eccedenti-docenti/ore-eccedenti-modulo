@@ -1,0 +1,22 @@
+[hidden nome-cognome default:user_display_name]
+[hidden email-docente default:user_email]
+
+<p>Contratto a tempo [checkbox* contratto exclusive "indeterminato" "determinato"]</p>
+<p>sede di servizio (richiesto) [select* scuola-grado include_blank "infanzia" "primaria" "secondaria"]</p> 
+
+<p>plesso di [select* scuola-sede include_blank "sede1" "sede2" "sede3" "più plessi"]</p>
+
+<p>indica quando sono state svolte le ore da eccedenti<br />
+<ul>
+<li>il [date data-ecc1 date-format:dd/mm/yy 10/10] dalle [time dalle1 size:6 step-minute:5 time-format:HH:mm min-hour:7 max-hour:19] alle [time alle1 size:6 step-minute:5 time-format:HH:mm min-hour:7 max-hour:19] motivazione [text motivazione1]</li>
+<li>il [date data-ecc2 date-format:dd/mm/yy 10/10] dalle [time dalle2 size:6 step-minute:5 time-format:HH:mm min-hour:7 max-hour:19] alle [time alle2 size:6 step-minute:5 time-format:HH:mm min-hour:7 max-hour:19] motivazione [text motivazione2]</li>
+<li>il [date data-ecc3 date-format:dd/mm/yy 10/10] dalle [time dalle3 size:6 step-minute:5 time-format:HH:mm min-hour:7 max-hour:19] alle [time alle3 size:6 step-minute:5 time-format:HH:mm min-hour:7 max-hour:19] motivazione [text motivazione3]</li>
+<li>il [date data-ecc4 date-format:dd/mm/yy 10/10] dalle [time dalle4 size:6 step-minute:5 time-format:HH:mm min-hour:7 max-hour:19] alle [time alle4 size:6 step-minute:5 time-format:HH:mm min-hour:7 max-hour:19] motivazione [text motivazione4]</li>
+<li>il [date data-ecc5 date-format:dd/mm/yy 10/10] dalle [time dalle5 size:6 step-minute:5 time-format:HH:mm min-hour:7 max-hour:19] alle [time alle5 size:6 step-minute:5 time-format:HH:mm min-hour:7 max-hour:19] motivazione [text motivazione5]</li>
+</ul>
+
+<p>le ore sono da considerare come [radio pagamento "pagamento" "recupero da definire e comunicare"]</p>
+
+<p>Avviso al responsabile di plesso [select referente include_blank "infanzia |mail@mail.it" "primaria |mail@mail.it" "secondaria|mail@mail.com"]</p>
+
+[submit "Invia la domanda"]

@@ -7,7 +7,7 @@
 <p>contratto a tempo [checkbox* contratto exclusive "indeterminato" "determinato"]</p>
 <p>sede di servizio (richiesto) [select* scuola-grado include_blank "infanzia" "primaria" "secondaria" "ufficio"]</p> 
 
-<p>plesso di [select* scuola-sede include_blank "Garlate" "Olginate" "Valgreghentino"]</p>
+<p>plesso di [select* scuola-sede include_blank "sede1" "sede2" "sede3"]</p>
 
 <h3>Festività soppresse</h3>
 <p>giorni di assenza dal [date soppr-inizio1 date-format:dd/mm/yy 10/10] al [date soppr-fine1 date-format:dd/mm/yy 10/10]</p>

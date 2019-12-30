@@ -1,0 +1,25 @@
+[hidden nome-cognome default:user_display_name]
+[hidden email-docente default:user_email]
+
+<p>Ruolo: [select* ruolo include_blank "collaboratore scolastico" "ass. amministrativo" "dsga"]</p>
+<p>contratto a tempo [checkbox* contratto exclusive "indeterminato" "determinato"]</p>
+<p>sede di servizio (richiesto) [select* scuola-grado include_blank "infanzia" "primaria" "secondaria" "ufficio" "più scuole"]</p> 
+
+<p>plesso di [select* scuola-sede include_blank "sede1" "sede2" "sede3" "più plessi"]</p>
+<p>indica il tuo orario di servizio per il giorno del permesso:<br />
+ dalle [time dalle1 size:6 step-minute:5 time-format:HH:mm min-hour:7 max-hour:19] alle [time alle1 size:6 step-minute:5 time-format:HH:mm min-hour:7 max-hour:19]<br />
+ dalle [time dalle2 size:6 step-minute:5 time-format:HH:mm min-hour:7 max-hour:19] alle [time alle2 size:6 step-minute:5 time-format:HH:mm min-hour:7 max-hour:19]</p>
+
+<p>giorno del permesso [date data-perm date-format:dd/mm/yy 10/10]  dalle [time dalle-perm size:6 step-minute:5 time-format:HH:mm min-hour:7 max-hour:19] alle [time alle-perm size:6 step-minute:5 time-format:HH:mm min-hour:7 max-hour:19]</p>
+
+<p>totale assenza: <br />
+ore [number* ore-ass min:0]</p>
+
+<p>indicare la motivazione:
+    [select* motivazione include_blank "visita" "terapia" "prestazione specialistica" "esame diagnostico"]</p>
+
+<p>Sarò sostituito da [text sostituzione placeholder "indicare il nome del sostituto o da definirsi"]</p>
+
+<p>[checkbox* pres-allegato "Presenterà il giustificativo in un secondo momento"]</p>
+
+[submit "Invia la domanda"]

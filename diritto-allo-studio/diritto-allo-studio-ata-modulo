@@ -1,0 +1,32 @@
+[hidden nome-cognome default:user_display_name]
+[hidden email-docente default:user_email]
+
+<p>Ruolo: [select* ruolo include_blank "collaboratore scolastico" "ass. amministrativo" "dsga"]</p>
+<p>contratto a tempo [checkbox* contratto exclusive "indeterminato" "determinato"]</p>
+<p>sede di servizio (richiesto) [select* scuola-grado include_blank "infanzia" "primaria" "secondaria" "ufficio" "più scuole"]</p> 
+
+<p>plesso di [select* scuola-sede include_blank "sede1" "sede2" "sede3" "più scuole"]</p>
+
+<p><strong>Se assenza giornaliera:</strong></p>
+
+<p>giorni di assenza dal [date data-inizio date-format:dd/mm/yy 10/10] al [date data-fine date-format:dd/mm/yy 10/10]</p>
+
+<p>totale giorni di assenza: [number giorni-ass min:0] pari a ore [number ore-permesso min:0 10/10] minuti [number minuti-permesso min:0 10/10]</p>
+
+<p><strong>Se assenza oraria:</strong></p>
+<p>giorno dell'assenza [date data-ass-or date-format:dd/mm/yy 10/10]</p>
+
+<p>ore di assenza dalle [time dalle size:6 step-minute:5 time-format:HH:mm min-hour:7 max-hour:19] alle [time alle size:6 step-minute:5 time-format:HH:mm min-hour:7 max-hour:19]</p>
+
+<hr />
+
+<p>totale ore di assenza già usufruita nell'anno solare: ore [number ore-fruite min:0 10/10] minuti [number minuti-fruiti min:0 step:30 max:30 10/10]<br />
+<em>Le ore da indicare sono la somma sia dell'assenza oraria che dell'assenza giornaliera</em></p>
+
+<hr />
+
+<p>[checkbox pres-allegato "Allega a questa comunicazione il file relativo alla richiesta" "Presenterà il giustificativo in un secondo momento"]</p>
+
+<p>File da allegare:[file allegato filetypes:doc|pdf|jpg|jpeg|png|docx|odt|odp|ppt]</p>
+
+[submit "Invia la domanda"]

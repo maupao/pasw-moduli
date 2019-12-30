@@ -1,0 +1,41 @@
+# Modulo per l'invio della richiesta di ferie dei docenti durante l'anno scolastico
+
+[hidden nome-cognome default:user_display_name]
+[hidden email-docente default:user_email]
+
+<p>contratto a tempo [checkbox* contratto exclusive "indeterminato" "determinato"]</p>
+<p>sede di servizio (richiesto) [select* scuola-grado include_blank "infanzia" "primaria" "secondaria" "ufficio"]</p> 
+
+<p>plesso di [select* scuola-sede include_blank "sede1" "sede2" "sede3"]</p>
+
+<h3>Ferie</h3>
+
+<p>giorni di assenza dal [date data-inizio1 date-format:dd/mm/yy 10/10] al [date data-fine1 date-format:dd/mm/yy 10/10]</p>
+
+<p>giorni di assenza dal [date data-inizio2 date-format:dd/mm/yy 10/10] al [date data-fine2 date-format:dd/mm/yy 10/10]</p>
+
+<p>giorni di assenza dal [date data-inizio3 date-format:dd/mm/yy 10/10] al [date data-fine3 date-format:dd/mm/yy 10/10]</p>
+
+<p>giorni di assenza dal [date data-inizio4 date-format:dd/mm/yy 10/10] al [date data-fine4 date-format:dd/mm/yy 10/10]</p>
+
+<p>totale giorni di assenza: [number* giorni-ass-ferie]</p>
+
+<p style="margin-left: 28px;">(già fruiti [number giorni-fruiti-ferie min:1 max:36] giorni, da non compilare in caso di giorni non fruiti in precedenza)</p>
+
+<h3>Sostituzioni:</h3>
+<p>giorno [date data-sost1 date-format:dd/mm/yy 10/10] ora [text ora-sost1 5/5] classe [text classe-sost1 5/5] docente sostituto [text doc-sost1]</p>
+<p>giorno [date data-sost2 date-format:dd/mm/yy 10/10] ora [text ora-sost2 5/5] classe [text classe-sost2 5/5] docente sostituto [text doc-sost2]</p>
+<p>giorno [date data-sost3 date-format:dd/mm/yy 10/10] ora [text ora-sost3 5/5] classe [text classe-sost3 5/5] docente sostituto [text doc-sost3]</p>
+<p>giorno [date data-sost4 date-format:dd/mm/yy 10/10] ora [text ora-sost4 5/5] classe [text classe-sost4 5/5] docente sostituto [text doc-sost4]</p>
+<p>giorno [date data-sost5 date-format:dd/mm/yy 10/10] ora [text ora-sost5 5/5] classe [text classe-sost5 5/5] docente sostituto [text doc-sost5]</p>
+<p>giorno [date data-sost6 date-format:dd/mm/yy 10/10] ora [text ora-sost6 5/5] classe [text classe-sost6 5/5] docente sostituto [text doc-sost6]</p>
+
+<p>Avviso al responsabile di plesso [select referente include_blank "infanzia |mail@mail.it" "primaria |mail@mail.it" "secondaria|mail@mail.com"]</p>
+
+<p>città: [text* domicilio-citta]</p>
+
+<p>via [text* domicilio-via]</label> <label>numero [number domicilio-n.civico min:0]</p>
+
+<p>telefono [tel* domicilio-telefono minlength:10 maxlength:15 10/10]</p>
+
+[submit "Invia la domanda"]
