@@ -31,3 +31,5 @@ La mail viene composta secondo il principio della ''Stampa unione''. Verranno qu
 Nella scheda Mail è necessario mettere i segni di spunta su _"Escludi dall'output le linee con mail-tag vuoti"_ in modo che non vengano inseriti nella mail righe dove non ci siano informazioni e _"Utilizza contenuti in HTML"_ per avere la mail formattata con i tag html.
 
 I tag possono essere inseriti anche nel campo A in modo da poter inviare la mail all'indirizzo di posta relativo a chi invia la domanda
+
+Inoltre nel piede delle mail si possono inserire i tag [_site_title] [_site_url] che permettono di far comparire rispettivamente il nome e l'indirizzo del sito da cui parte il modulo.
