@@ -7,7 +7,7 @@
 <p>contratto a tempo [checkbox* contratto exclusive "indeterminato" "determinato"]</p>
 <p>sede di servizio (richiesto) [select* scuola-grado include_blank "infanzia" "primaria" "secondaria" "ufficio"]</p> 
 
-<p>plesso di [select scuola-sede include_blank "cittaà1" "città2" "città3"]</p>
+<p>plesso di [select scuola-sede include_blank "sede1" "sede2" "sede3"]</p>
 
 <p>assenza per [select* tipo-104 "sé stessi" "assistenza ad un familiare"]</p>
 
