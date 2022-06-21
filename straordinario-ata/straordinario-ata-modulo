@@ -1,0 +1,16 @@
+#modulo per la richiesta di lavoro straordinario ATA - con campi predisposti per il plugin CF7-picker
+
+[hidden nome-cognome default:user_display_name]
+[hidden email-docente default:user_email]
+
+<p>il tuo ruolo: [select* ruolo include_blank "assistente amministrativo" "collaboratore scolastico"]</p>
+
+<p>plesso di [select* scuola-sede include_blank "infanzia La Nostra Famiglia" "infanzia Garbagnate Rota" "primaria Calvino" "primaria Segantini" "primaria NF 3 padiglione" "primaria NF 5 padiglione" "secondaria Wojtyla" "secondaria NF 2 padiglione" "secondaria NF 3 padiglione" "segreteria"]</p>
+
+<p>indica il giorno dello straordinario [date* data-straord date-format:dd/mm/yy 10/10]</p>
+
+<p>indica l'orario: dalle [time* dalle size:6 time-format:HH:mm step-minute:5 min-hour:7 max-hour:20] alle [time* alle size:6 time-format:HH:mm step-minute:5 min-hour:7 max-hour:20] per n. ore [number* ore] e n. minuti [number* min]</p>
+<p>indica il motivo: [select* motivo-straord include_blank "in sostituzione del collega" "per riunioni/attività oltre l'orario di servizio" "altro"]</p>
+<p>indica il nome del collega sostituito, della riunione o altro motivo di straordinario [text* motivo-spec]</p>
+
+[submit "Invia la richiesta"]
